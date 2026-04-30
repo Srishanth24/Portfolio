@@ -413,8 +413,15 @@ button {
 }
 
 @keyframes float {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-15px); }
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
 }
 
 .Nav {
@@ -959,9 +966,17 @@ button {
     background: rgba(255, 255, 255, 0.26);
 }
 
-.health-lines span:nth-child(1) { width: 94%; }
-.health-lines span:nth-child(2) { width: 72%; }
-.health-lines span:nth-child(3) { width: 84%; }
+.health-lines span:nth-child(1) {
+    width: 94%;
+}
+
+.health-lines span:nth-child(2) {
+    width: 72%;
+}
+
+.health-lines span:nth-child(3) {
+    width: 84%;
+}
 
 .score-ring {
     width: 74px;
