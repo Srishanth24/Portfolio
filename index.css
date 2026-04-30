@@ -616,7 +616,7 @@ button {
 
 .section-wrap {
     width: 80%;
-    margin: 0 auto 100px;
+    margin: 0 auto;
 }
 
 .section-heading {
@@ -657,6 +657,7 @@ button {
 #resume,
 #contact {
     background: #010116;
+    padding: 70px 0;
 }
 
 .timeline {
@@ -1067,7 +1068,7 @@ button {
 
 .resume-box {
     width: 80%;
-    margin: 0 auto 100px;
+    margin: 0 auto;
     padding: 40px;
     display: grid;
     grid-template-columns: 1fr auto;
