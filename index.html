@@ -12,13 +12,17 @@
 <body>
 
     <header class="Nav">
-        <a href="/">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact Me</a>
-        <a href="#resume">Resume</a>
+        <a class="brand" href="#home">Srishanth</a>
+        <nav class="nav-links" aria-label="Primary navigation">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+            <a href="#achievements">Achievements</a>
+            <a href="#projects">Projects</a>
+            <a href="#resume">Resume</a>
+            <a class="nav-cta" href="#contact">Contact</a>
+        </nav>
 
         <!-- <label class="toggle">
             <input type="checkbox" id="themeSwitch">
@@ -30,19 +34,35 @@
         </label> -->
     </header>
 
-    <div class="Hero-section">
+    <div class="Hero-section" id="home">
         <div class="Hero-info">
             <h3>Hi, I'm Srishanth Gunday</h3>
-            <h1>I'm Full Stack Developer</h1>
+            <h1>Full Stack Developer building scalable backend systems.</h1>
             <p>
-                A full stack developer building modern, user-friendly web applications. Focused on clean code,
-                performance, and solving real-world problems.
+                I build fast APIs, cloud-ready services, and clean web experiences using Node.js,
+                FastAPI, AWS, MySQL, and modern frontend fundamentals.
             </p>
-            <button>View Projects</button>
-            <button>Contact Me</button>
+            <div class="hero-actions">
+                <a class="btn" href="#projects">View Projects</a>
+                <a class="btn secondary-btn" href="#contact">Contact Me</a>
+            </div>
+            <div class="hero-stats" aria-label="Portfolio highlights">
+                <div>
+                    <strong>10+</strong>
+                    <span>REST APIs</span>
+                </div>
+                <div>
+                    <strong>1000+</strong>
+                    <span>Daily Requests</span>
+                </div>
+                <div>
+                    <strong>AWS</strong>
+                    <span>Serverless</span>
+                </div>
+            </div>
         </div>
         <div class="Hero-img">
-            <img src="/Images/NBG.png" alt="Person img">
+            <img src="Images/NBG.png" alt="Person img">
         </div>
 
     </div>
@@ -65,16 +85,15 @@
 
             <div class="abt-r">
                 <p>
-                    I’m <span class="highlight">Srishanth Gunday</span>, a full stack developer passionate about
+                    I'm <span class="highlight">Srishanth Gunday</span>, a full stack developer passionate about
                     building modern and user-friendly web
                     applications.
                     I enjoy turning ideas into real products using clean and efficient code.
-                    Currently, I’m focused on improving my problem-solving skills and building strong projects to become
+                    Currently, I'm focused on improving my problem-solving skills and building strong projects to become
                     internship-ready.
                     My long-term goal is to grow into a top software engineer and work on impactful global products.
                 </p>
 
-                <button type="button" id="abt-btn">Know More</button>
             </div>
 
 
@@ -113,7 +132,7 @@
                     MySQL
                 </div>
 
-                
+
                 <div class="s-ele">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
                     JavaScript
@@ -122,7 +141,7 @@
                     <img class="aws-icon" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/amazonaws.svg" />
                     AWS
                 </div>
-                
+
                 <div class="s-ele">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" />
                     FastAPI
@@ -163,9 +182,207 @@
             </div>
         </div>
     </section>
+
+    <section id="experience">
+        <div class="section-wrap">
+            <div class="section-heading">
+                <h1>Experience</h1>
+                <p>Professional backend and full stack work focused on performance, APIs, and cloud architecture.</p>
+            </div>
+
+            <div class="timeline">
+                <article class="timeline-item">
+                    <span class="timeline-dot"></span>
+                    <div class="timeline-card">
+                        <p class="eyebrow">Feb 2025 - Present</p>
+                        <div class="role-row">
+                            <div>
+                                <h2>Freelance Full Stack Developer</h2>
+                                <p class="company">AbroadPlan</p>
+                            </div>
+                        </div>
+                        <ul class="detail-list">
+                            <li>Built scalable backend services using Node.js handling 1000+ daily requests with low
+                                latency.</li>
+                            <li>Developed 10+ REST APIs with optimized performance.</li>
+                            <li>Designed serverless architecture using AWS Lambda, API Gateway, and S3.</li>
+                            <li>Optimized MySQL and DynamoDB queries for efficient data access.</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="achievements">
+        <div class="section-wrap">
+            <div class="section-heading">
+                <h1>Achievements</h1>
+                <p>Certifications, milestones, and learning progress that support my backend engineering path.</p>
+            </div>
+
+            <div class="achievement-grid">
+                <article class="achievement-card">
+                    <p class="eyebrow">Backend</p>
+                    <h2>10+ Production-Ready APIs</h2>
+                    <p>Designed and built REST APIs for real-world workflows with performance and maintainability in
+                        mind.</p>
+                </article>
+
+                <article class="achievement-card">
+                    <p class="eyebrow">Cloud</p>
+                    <h2>AWS Serverless Architecture</h2>
+                    <p>Worked with Lambda, API Gateway, S3, MySQL, and DynamoDB while building scalable backend systems.
+                    </p>
+                </article>
+
+                <article class="achievement-card">
+                    <p class="eyebrow">Certification</p>
+                    <h2>Machine Learning Certificate</h2>
+                    <p>Completed the Machine Learning course from N.S.D.C.</p>
+                    <div class="cert-meta">
+                        <span>Issued: 7 July 2025</span>
+                        <span>Student ID: CAN_37409344</span>
+                    </div>
+                    <div class="card-actions">
+                        <a href="Files/CAN_37409344_4876606%20(1).pdf" target="_blank" rel="noreferrer">View</a>
+                        <a href="Files/CAN_37409344_4876606%20(1).pdf" download="Srishanth Certificate.pdf">Download</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="section-wrap">
+            <div class="section-heading">
+                <h1>Projects</h1>
+                <p>Backend-heavy projects built with scalable APIs, database design, and practical system logic.</p>
+            </div>
+
+            <div class="projects-grid">
+                <article class="project-card">
+                    <img class="project-image" src="Images/sprint-health-platform.svg"
+                        alt="Sprint health intelligence platform preview">
+                    <div class="project-content">
+                        <h2>Sprint - Health Intelligence Platform</h2>
+                        <ul class="detail-list">
+                            <li>Developed scalable backend for health records and tracking systems.</li>
+                            <li>Built APIs for prescriptions, appointments, and medical history.</li>
+                            <li>Implemented ML model with about 80% accuracy for disease risk prediction.</li>
+                            <li>Ensured data consistency and modular system design.</li>
+                        </ul>
+                        <div class="tags">
+                            <span>html</span>
+                            <span>Node.js</span>
+                            <span>AWS</span>
+                            <span>MySQL</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <img class="project-image" src="Images/resource-scheduler-system.svg"
+                        alt="Distributed resource scheduling system preview">
+                    <div class="project-content">
+                        <h2>Distributed Resource Scheduling System</h2>
+                        <ul class="detail-list">
+                            <li>Built a system to handle concurrent resource allocation.</li>
+                            <li>Designed APIs for scheduling and real-time querying.</li>
+                            <li>Structured database logic for reliable allocation state management.</li>
+                        </ul>
+                        <div class="tags">
+                            <span>Node.js</span>
+                            <span>MySQL</span>
+                            <span>REST APIs</span>
+                            <span>Concurrency</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <div class="section-wrap">
+            <div class="section-heading">
+                <h1>Testimonial</h1>
+                <p>Feedback-style summary from freelance client work and backend delivery.</p>
+            </div>
+
+            <div class="testimonial-card">
+                <span class="quote-mark">"</span>
+                <p>
+                    Srishanth helped us build AbroadPlan's website from scratch during our early startup stage.
+                    He worked with strong ownership, understood our requirements quickly, and delivered a smooth,
+                    reliable website that helped us move faster as a team and give users a better experience.
+                </p>
+                <div>
+                    <strong>AbroadPlan Team</strong>
+                    <span>Freelance Full Stack Developer • Feb 2025 - Present</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="resume">
+        <div class="resume-box">
+            <div>
+                <p class="eyebrow">Resume</p>
+                <h1>Ready for internships and real-world projects.</h1>
+
+            </div>
+            <div class="resume-actions">
+                <a class="btn secondary-btn" href="Resume/Srishanth_23891A0587.pdf" target="_blank"
+                    rel="noreferrer">View Resume</a>
+                <a class="btn" href="Files/Srishanth_23891A0587.pdf" download="Srishanth's Resume.pdf">Download
+                    Resume</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="section-wrap contact-wrap">
+            <div class="contact-info">
+                <p class="eyebrow">Contact Me</p>
+                <h1>Let's build something useful.</h1>
+                <p>
+                    Have an internship opportunity, project idea, or collaboration in mind? Send a message and I'll get
+                    back to you.
+                </p>
+
+                <div class="contact-links">
+                    <a href="mailto:gundaysrishanth@gmail.com">Email</a>
+                    <a href="https://github.com/Srishanth24" target="_blank" rel="noreferrer">GitHub</a>
+                    <a href="https://www.linkedin.com/in/srishanth-gunday/" target="_blank"
+                        rel="noreferrer">LinkedIn</a>
+                </div>
+            </div>
+
+            <form class="contact-form">
+                <input type="text" name="name" placeholder="Your name" required>
+                <input type="email" name="email" placeholder="Your email" required>
+                <textarea name="message" rows="6" placeholder="Your message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>Built by Srishanth Gunday</p>
+        <a href="/">Back to top</a>
+    </footer>
 </body>
 <script>
+    const form = document.querySelector(".contact-form");
 
+    if (form) {
+        form.addEventListener("submit", (event) => {
+            event.preventDefault();
+            alert("Need to connect to backend");
+            form.reset();
+        });
+    }
 </script>
 
 </html>
