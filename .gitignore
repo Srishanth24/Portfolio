@@ -1,4 +1,0 @@
-cd "D:\Web Development\Portfolio"
-git add .
-git commit -m "feat: transform portfolio into Gen Z motion-rich light-themed personal site"
-git push origin main
