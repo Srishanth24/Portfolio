@@ -4,11 +4,35 @@
  */
 
 document.addEventListener("DOMContentLoaded", () => {
+  document.documentElement.classList.add("js-ready");
   initNavigation();
+  initScrollReveal();
   initProjectFiltering();
   initProjectModal();
   initContactForm();
 });
+
+/* ==========================================================================
+   Subtle Scroll Reveal via IntersectionObserver
+   ========================================================================== */
+function initScrollReveal() {
+  const revealElements = document.querySelectorAll(".reveal-on-scroll");
+  if (!revealElements.length) return;
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-revealed");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { rootMargin: "0px 0px -8% 0px", threshold: 0.08 }
+  );
+
+  revealElements.forEach((el) => observer.observe(el));
+}
 
 /* ==========================================================================
    Navigation, Responsive Drawer & Scroll Spy
@@ -488,7 +512,7 @@ function initProjectModal() {
     modalBody.innerHTML = `
       <div>
         <h3 class="modal-title" id="modal-project-title">${data.title}</h3>
-        <p class="modal-text" style="margin-top: 0.5rem; color: #cbd5e1; font-weight: 500;">
+        <p class="modal-text" style="margin-top: 0.5rem; color: var(--text-secondary); font-weight: 500;">
           ${data.tagline}
         </p>
       </div>
@@ -506,7 +530,7 @@ function initProjectModal() {
       <div>
         <h4 class="modal-section-title">3. Architecture &amp; Data Flow</h4>
         <div class="modal-diagram-container">
-          <pre style="font-family: var(--font-mono); font-size: 0.8rem; color: #94a3b8; white-space: pre-wrap; line-height: 1.6;">${data.architectureDataFlow.trim()}</pre>
+          <pre style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-primary); white-space: pre-wrap; line-height: 1.6;">${data.architectureDataFlow.trim()}</pre>
         </div>
       </div>
 
@@ -674,7 +698,7 @@ function initContactForm() {
 
     const descEl = document.createElement("p");
     descEl.style.fontSize = "0.88rem";
-    descEl.style.color = "#e2e8f0";
+    descEl.style.color = "var(--text-secondary)";
     descEl.style.lineHeight = "1.5";
     descEl.textContent =
       "Your inquiry details have been formatted. Click below to open your email client and send the message directly to gundaysrishanth@gmail.com:";
